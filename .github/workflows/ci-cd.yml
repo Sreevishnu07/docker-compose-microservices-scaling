@@ -91,7 +91,7 @@ jobs:
          -t ${{ secrets.DOCKER_USERNAME }}/backend:latest \
          -t ${{ secrets.DOCKER_USERNAME }}/backend:${{ steps.vars.outputs.TAG }} ./backend
 
-      - name: Push Docker image
-        run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/backend:latest 
-          docker push ${{ secrets.DOCKER_USERNAME }}/backend:${{ steps.vars.outputs.TAG }}
+     - name: Push Docker image
+      run: |
+        docker push ${{ secrets.DOCKER_USERNAME }}/backend:latest 
+        docker push ${{ secrets.DOCKER_USERNAME }}/backend:${{ steps.vars.outputs.TAG }}

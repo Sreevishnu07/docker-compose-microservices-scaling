@@ -68,6 +68,3 @@ docker compose down
 
 ---
 
-## License
-
-[MIT](LICENSE)
